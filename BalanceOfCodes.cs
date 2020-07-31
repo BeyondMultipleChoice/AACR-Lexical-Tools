@@ -16,6 +16,7 @@ using System.Data;
     //Form will call the function up to the number of analytic bins to have the balance of each bin
     //Programmer: Marisol Mercado Santiago (marisolvsh@gmail.com)
     //Automated Analysis of Constructed Response Research Group
+    //Reference: https://stats.stackexchange.com/questions/239973/a-general-measure-of-data-set-imbalance
     public BalanceOfCodes(double k, double n, List<double> c, List<string> distinctLevels)
         {
             double H = 0;
@@ -39,5 +40,6 @@ using System.Data;
 
         public double GetBalance()
         { return balance;}
+        
     }
 
